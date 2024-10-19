@@ -1,0 +1,580 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>饭喏博客</title>
+<link rel="shortcut icon" href="https://freeppt.eu.org/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://freeppt.eu.org/media/css/tailwind.css">
+<link rel="stylesheet" href="https://freeppt.eu.org/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="饭喏博客 - Atom Feed" href="https://freeppt.eu.org/atom.xml">
+
+    
+
+  <meta name="description" content="分享最新动漫动画素材，以及热门电影电视剧视频" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://freeppt.eu.org/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/6MgmQNwhCr/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Vlese（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/q4dKr3ZB0g/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              扎克·施奈德版正义联盟（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/4nZq8VN1pS/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              碧蓝航线（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/kv_qSCuuiYl/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              阿尔萨斯（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/7pBr3NzLX-L/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Rinhee（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/S5EiWh1-nv/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              绝地战警：生死与共（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/YF-pZFb-8mJ/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              威尔·史密斯（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/b6w0yg-vcH3/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              马丁·劳伦斯（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/zbiAPetBGZ/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              VAM小枫（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/mLXp16sQfJ/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              国漫（3）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/Iq70nKgwIbY/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              诛仙（2）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/gYfDNso-kk4/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              陆雪琪（2）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/VAR9NHD2cd/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              目中无人2（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/cYy3XzOa-9N/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              谢苗（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/FR36z4rV7Bj/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              杨恩又（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/WOYIJy-7Te/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              日漫（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/RPHWbL_rrLj/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              某番（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/fS-9iS-VNpr/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              桜都字幕组（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/NndiC37jj-/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Anna Anon（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/_VPeV0Ki36/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              冲锋（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/cl5fKDVC2q/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              原神（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/eSTU83TD8wH/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              MMD（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/ykY7XHbCeLf/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              AlphaG（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/b_LgttDAZwf/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              莫娜（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/JGEjycv7z-/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              来福大酒店（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/GdbkjyYx1E2/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              黄轩（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/2LakE65YUYf/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              柳岩（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/bulGzF4GYXH/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              董宝石（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/IFjjS5wK_A/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              海关战线（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/0ocGjBVPMHv/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              张学友（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/BygtvDbluYw/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              林嘉欣（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/yE0YPNBnKco/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              谢霆锋（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/r1qQTbuhtw/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              云边有个小卖部（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/fYo0jwAiLUo/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              周也（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/NXmifGA3yEX/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              彭昱畅（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/3RsUaQ24Fh/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              VAMbro（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/3my9_0eTHD/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              VAM（2）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/w5m8J1exOR/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              仙逆（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/y-qdizZQQ2a/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              李慕婉（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/KETzqi6kh8/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              逃脱（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/UEP3K99Dfv_/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              韩国电影（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/9D5pCIyL9m/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              志愿军：雄兵出击（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/oF4cLLYpAdo/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              唐国强（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/wIP214KKSf5/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              王砚辉（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/48LSW5YlK8r/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              刘劲（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/qqQe2md0kK1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              辛柏青（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/Kq5ANfmwqBK/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              张颂文（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/hqkLMbqc_I/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              死或生（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/2p9zrweE9_j/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              115313wang（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/yzYPXCC733Z/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              玛丽罗斯（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/K1BRfdKMMr/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              狗阵（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/CNeAzo1k9u7/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              彭于晏（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/u3MtY7DlT_4/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              佟丽娅（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/lBl4ELtVJ6q/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              贾樟柯（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/k8dPwQwWM1_/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Xiang chu edge（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/mQnWOyKZKuK/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              远坂凛（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/6OwCyGt6Wq/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              谈判专家（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/n-_j4fgV85s/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              刘青云（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/KT2I_V43wHY/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              吴镇宇（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/H1DpzQXuI64/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              刘德华（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/S5XVKm2r6bE/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              苗侨伟（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/uEnmyM124Rh/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              姜皓文（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/WWhJrf6Sqo/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              不知火舞（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/hr9k0wwTbup/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Akiryo（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/Y1FEQi-j07z/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              桐山遥（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/8lPYoIbI9V/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              三大队电影（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/3OJZO1yohSE/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              张译（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/UeKAf4c8uJy/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              李晨（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/nyMXfEkcSU9/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              魏晨（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/WI-ytt-E8A-/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              曹炳琨（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/jCrSnoplwR/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              咒术回战（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/qRD-Ldyt7m5/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              MOMOTDart画师（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/mZt37kCn6dy/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              钉崎野蔷薇（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://freeppt.eu.org/lb_PJrcO5O/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              白蛇：浮生（1）
+            </a>
+          </div>
+        
+      </div>
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://freeppt.eu.org/">饭喏博客</a>
+</footer>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://freeppt.eu.org/media/scripts/main.js"></script>
+</body>
+</html>
